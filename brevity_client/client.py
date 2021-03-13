@@ -5,11 +5,11 @@ from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 import tkinter
 
-IP = '10.0.0.246'  # my windows machine
-
 HOST = input('Enter host: ')
 if not HOST:
-    HOST = IP
+    print("No host provided. Provide host.")
+    sys.exit()
+
 PORT = input('Enter port: ')
 if not PORT:
     PORT = 33000
