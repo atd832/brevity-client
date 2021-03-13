@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d577b231-c2ae-4e40-8870-73987c315e48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/brevity_client/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brevity_client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity_client/client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,5 +73,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1515" y="471" width="598" height="490" key="find.popup" timestamp="1615671124547">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state x="1515" y="471" width="598" height="490" key="find.popup/0.23.3440.1337/882.1463.1680.1027@0.23.3440.1337" timestamp="1615671124547" />
+    <state x="1479" y="386" width="670" height="676" key="search.everywhere.popup" timestamp="1615665025375">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state x="1479" y="386" width="670" height="676" key="search.everywhere.popup/0.23.3440.1337/882.1463.1680.1027@0.23.3440.1337" timestamp="1615665025375" />
   </component>
 </project>
