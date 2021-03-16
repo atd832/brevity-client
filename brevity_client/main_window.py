@@ -18,26 +18,23 @@ class MainWindow(tk.Frame):
 		self.scrollbar = tk.Scrollbar(self.msg_frame)
 		self.msg_list = tk.Listbox(self.msg_frame, height=15, width=50, yscrollcommand=self.scrollbar.set)
 		self.prettify_widgets()
-		self.pack()
 		self.client_socket = socket(AF_INET, SOCK_STREAM)
 		self.bufsiz = 1024
 
 	def prettify_widgets(self):
-		# TODO: check for callbacks or set defaults
 		self.master.protocol('WM_DELETE_WINDOW', self.on_closing)
 		self.my_msg.set('Type your name here')
 
+		self.entry_field.bind('<Return>', self.send)
+		self.entry_field.pack(side=tk.BOTTOM)
+
+		self.send_button.pack(side=tk.BOTTOM)
+
 		self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 		self.msg_list.pack(side=tk.LEFT, fill=tk.BOTH)
-		self.msg_list.pack()
 
 		self.users_list.pack(side=tk.LEFT, fill=tk.BOTH)
 		self.users_list.pack()
-
-		self.entry_field.bind('<Return>', self.send)
-		self.entry_field.pack()
-
-		self.send_button.pack()
 
 	def conn(self):
 		host = input('Enter host: ')
@@ -66,10 +63,12 @@ class MainWindow(tk.Frame):
 				msg = self.client_socket.recv(self.bufsiz).decode('utf8')
 
 				# get latest list of users
+				# FIXME: this might not be properly parsing request
 				if str(msg).split(' ')[0] == 'USERS':
 					users = str(msg).split(' ')[1:]
 					# TODO: users should have their own statuses updated on infinite loop
 					self.users_list.delete(0, tk.END)
+
 					for user in users:
 						self.users_list.insert(tk.END, user)
 				else:
@@ -85,13 +84,15 @@ class MainWindow(tk.Frame):
 		self.client_socket.send(bytes(msg, 'utf8'))
 
 	def on_closing(self):
-		self.client_socket.shutdown(1)
-		self.client_socket.close()
-		self.master.destroy()
-		sys.exit()
+		try:
+			self.client_socket.shutdown(1)
+			self.client_socket.close()
+			self.master.destroy()
+			sys.exit()
+		except OSError:
+			sys.exit()
 
 	def launch(self):
-		# TODO: check for connection
 		self.conn()
 		receive_thread = Thread(target=self.receive)
 		receive_thread.start()
