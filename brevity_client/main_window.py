@@ -2,6 +2,19 @@ import sys
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 import tkinter as tk
+from json import loads
+from json.decoder import JSONDecodeError
+
+
+def serialize_users(msg: str):
+	try:
+		request = loads(msg)
+		if request.get('users'):
+			return request.get('users')
+		else:
+			return None
+	except JSONDecodeError:
+		return None
 
 
 class MainWindow(tk.Frame):
@@ -63,10 +76,8 @@ class MainWindow(tk.Frame):
 				msg = self.client_socket.recv(self.bufsiz).decode('utf8')
 
 				# get latest list of users
-				# FIXME: this might not be properly parsing request
-				if str(msg).split(' ')[0] == 'USERS':
-					users = str(msg).split(' ')[1:]
-					# TODO: users should have their own statuses updated on infinite loop
+				if serialize_users(msg):
+					users = serialize_users(msg).keys()
 					self.users_list.delete(0, tk.END)
 
 					for user in users:

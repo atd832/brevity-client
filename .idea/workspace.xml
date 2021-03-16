@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d577b231-c2ae-4e40-8870-73987c315e48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/brevity_client/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/poetry.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/brevity-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/brevity-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brevity_client/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity_client/main_window.py" afterDir="false" />
     </list>
@@ -45,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -57,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615593729573</updated>
       <workItem from="1615593730971" duration="578000" />
+      <workItem from="1615853445515" duration="2881000" />
     </task>
     <servers />
   </component>
@@ -73,6 +77,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1515" y="471" width="598" height="490" key="find.popup" timestamp="1615671124547">
