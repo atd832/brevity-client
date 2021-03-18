@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d577b231-c2ae-4e40-8870-73987c315e48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/brevity_client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity_client/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brevity_client/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity_client/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -55,6 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615593729573</updated>
       <workItem from="1615593730971" duration="578000" />
+      <workItem from="1615853445515" duration="3135000" />
+      <workItem from="1616086980622" duration="5234000" />
     </task>
     <servers />
   </component>
@@ -71,5 +79,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1464" y="1732" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616091238947">
+      <screen x="882" y="1463" width="1680" height="1027" />
+    </state>
+    <state x="1464" y="1732" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3440.1337/882.1463.1680.1027@882.1463.1680.1027" timestamp="1616091238947" />
+    <state x="1515" y="471" width="598" height="490" key="find.popup" timestamp="1615671124547">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state x="1515" y="471" width="598" height="490" key="find.popup/0.23.3440.1337/882.1463.1680.1027@0.23.3440.1337" timestamp="1615671124547" />
+    <state x="1479" y="386" width="670" height="676" key="search.everywhere.popup" timestamp="1615665025375">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state x="1479" y="386" width="670" height="676" key="search.everywhere.popup/0.23.3440.1337/882.1463.1680.1027@0.23.3440.1337" timestamp="1615665025375" />
   </component>
 </project>
