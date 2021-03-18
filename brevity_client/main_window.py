@@ -20,8 +20,6 @@ def serialize_users(msg: str):
 class MainWindow(tk.Frame):
 
 	def __init__(self, master, **kwargs):
-		# self.send_callback = None
-		# self.receive_callback = None
 		self.master = master
 		self.msg_frame = tk.Frame.__init__(self, master)
 		self.my_msg = tk.StringVar()
