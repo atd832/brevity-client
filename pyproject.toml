@@ -6,6 +6,7 @@ authors = ["atd832 <michelle.gramolini@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+setuptools = "^54.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
