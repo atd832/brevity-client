@@ -1,6 +1,6 @@
 """Script for Tkinter chat_window chat client."""
 import tkinter as tk
-from brevity_client.main_window import MainWindow
+from main_window import MainWindow
 
 
 chat_window = tk.Tk()
